@@ -29,12 +29,12 @@ for recipestring in stringcrafttoremove {
 
 //replace recipes
 /*
-<minecraft:furnace> : [
-	[
-		[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:stone>, null, <ore:stone>], 
-		[<minecraft:stonebrick>, <minecraft:stonebrick>, <minecraft:stonebrick>]
-	]
-],
+	<minecraft:furnace> : [
+		[
+			[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:stone>, null, <ore:stone>], 
+			[<minecraft:stonebrick>, <minecraft:stonebrick>, <minecraft:stonebrick>]
+		]
+	],
 */
 val recipestoreplace = {
 	
