@@ -50,12 +50,12 @@ for itemoutput, recipearray in recipestoreplace {
 
 //add recipes
 /*
-<minecraft:furnace> : [
-	[
-		[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:stone>, null, <ore:stone>], 
-		[<minecraft:stonebrick>, <minecraft:stonebrick>, <minecraft:stonebrick>]
-	]
-],
+	<minecraft:furnace> : [
+		[
+			[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:stone>, null, <ore:stone>], 
+			[<minecraft:stonebrick>, <minecraft:stonebrick>, <minecraft:stonebrick>]
+		]
+	],
 */
 val recipestoadd = {
 	
