@@ -40,6 +40,7 @@ val recipetypes = {
 for outputiitemstack, inputiingredients in recipesitems {
     //get input and ouput items   
     //get mortar types for recipe, if null use default mortar list
+    //Mortar.addRecipe(String[] mortarTypes, IItemStack output, int duration, IIngredient[] inputs);
     if (isNull(recipetypes[outputiitemstack]) == true) {
         Mortar.addRecipe(defaulttypes, outputiitemstack, defaulttime, inputiingredients);
     }else{
