@@ -1,5 +1,5 @@
 #norun
-import crafttweaker.item.IItemStack;
+import crafttweaker.api.item.IItemStack;
 //1.16.4
 print("Loading Inital Inventory Script");
     //example
