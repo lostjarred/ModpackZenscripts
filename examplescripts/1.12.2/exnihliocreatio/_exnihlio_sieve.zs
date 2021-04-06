@@ -36,6 +36,7 @@ for stringiitemstackouput, stringiingredientinput in stringsieverecipe {
     Sieve.addStringMeshRecipe(stringiingredientinput, stringiitemstackouput, chance);
 }
 
+
 //flint mesh
 /*
     example 
@@ -91,4 +92,33 @@ for ironiitemstackouput, ironiingredientinput in ironsieverecipe {
         Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
     */
     Sieve.addIronMeshRecipe(ironiingredientinput, ironiitemstackouput, chance);
+}
+
+
+//diamond mesh
+/*
+    example 
+    <immersiveengineering:seed> : <ore:dirt>,
+*/
+val diamondsieverecipe = {
+
+} as IIngredient[IItemStack];
+
+/*
+    example 
+    <immersiveengineering:seed> : 0.35,
+*/
+val diamondsieverecipechance = {
+
+} as float[IItemStack];
+
+for diamondiitemstackouput, diamondiingredientinput in diamondsieverecipe {
+    //get chance from array cast as float
+    var chance = diamondsieverecipechance[diamondiitemstackouput] as float;
+
+    /*
+        Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
+        Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
+    */
+    Sieve.addDiamondMeshRecipe(diamondiingredientinput, diamondiitemstackouput, chance);
 }
