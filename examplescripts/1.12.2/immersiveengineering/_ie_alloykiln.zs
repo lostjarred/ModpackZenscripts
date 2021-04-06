@@ -45,3 +45,16 @@ for itemstinput, iingredrecipe in alloykilnrecipes {
     */
     mods.immersiveengineering.AlloySmelter.addRecipe(itemstinput, alkiitem1, alkiitem2, time);
 }
+
+val removerecipeitems = [
+
+] as IItemStack[];
+
+for iitemremove in removerecipeitems {
+    /*
+        //Example:
+        mods.immersiveengineering.AlloySmelter.removeRecipe(IItemstack output);
+        mods.immersiveengineering.AlloySmelter.removeRecipe(<minecraft:diamond>);
+    */
+    mods.immersiveengineering.AlloySmelter.removeRecipe(iitemremove);
+}
