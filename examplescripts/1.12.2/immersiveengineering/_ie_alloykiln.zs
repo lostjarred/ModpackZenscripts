@@ -27,26 +27,17 @@ val alloykilnrecipes = {
     example
     <enderio:item_alloy_ingot:3> : 240 as int
 */
-/*
+
 val alloykilnrecipetime = {
 
 } as int[IItemStack];
-*/
+
 for itemstinput, iingredrecipe in alloykilnrecipes {
     //break apart recipe array into 2 variables 
     var alkiitem1 = iingredrecipe[0];
     var alkiitem2 = iingredrecipe[1];
-    var time = defaulttime;
-/* non functional for some reason come back to it later
-    
-    //check if time exists in recipe array 
-    //if ( isNull(alloykilnrecipetime[itemstinput]) ){
-    if (alloykilnrecipetime[itemstinput] > 0 ){
-        time = defaulttime;
-    }else{
-        time = alloykilnrecipetime[itemstinput];
-    }
-*/
+    var time = alloykilnrecipetime[itemstinput] as int;
+
     /*
         //Example:
             mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient first, IIngredient second, int time);
