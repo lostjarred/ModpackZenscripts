@@ -7,6 +7,8 @@ import crafttweaker.item.IIngredient;
 import mods.exnihilocreatio.Sieve;
 print(" :ExNihilo_Sieve");
 
+
+//string mesh 
 /*
     example 
     <immersiveengineering:seed> : <ore:dirt>,
@@ -34,6 +36,7 @@ for stringiitemstackouput, stringiingredientinput in stringsieverecipe {
     Sieve.addStringMeshRecipe(stringiingredientinput, stringiitemstackouput, chance);
 }
 
+//flint mesh
 /*
     example 
     <immersiveengineering:seed> : <ore:dirt>,
@@ -59,4 +62,33 @@ for flintiitemstackouput, flintiingredientinput in flintsieverecipe {
         Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
     */
     Sieve.addFlintMeshRecipe(flintiingredientinput, flintiitemstackouput, chance);
+}
+
+
+//iron mesh
+/*
+    example 
+    <immersiveengineering:seed> : <ore:dirt>,
+*/
+val ironsieverecipe = {
+
+} as IIngredient[IItemStack];
+
+/*
+    example 
+    <immersiveengineering:seed> : 0.35,
+*/
+val ironsieverecipechance = {
+
+} as float[IItemStack];
+
+for ironiitemstackouput, ironiingredientinput in ironsieverecipe {
+    //get chance from array cast as float
+    var chance = ironsieverecipechance[ironiitemstackouput] as float;
+
+    /*
+        Sieve.addIronMeshRecipe(IIngredient, IItemStack, Float chance);
+        Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
+    */
+    Sieve.addIronMeshRecipe(ironiingredientinput, ironiitemstackouput, chance);
 }
